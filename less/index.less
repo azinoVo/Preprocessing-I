@@ -53,11 +53,90 @@ table {
     box-sizing: border-box;
 }
 
+//Beginning of my Code
+
+@bg-color: #82b2f4;
+@bg-check:#ee96cb;
+
+//background color for smooth layout, remove later
+
+// .about, .work-exp, .portfolio {
+// 	background-color:@bg-check;
+// }
+
+// .skills, .education, footer  {
+// 	background-color:@bg-color;
+// }
+
+
+
 html, body {
     height: 100%;
 }
 
-// Testing
+.container {
+	max-width:1100px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+	img {
+		width: 25%;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		border-bottom: 1px solid black;
+	}
+}
+
+header {
+	text-align:center;
+	background-color:@bg-color;
+
+	h1 {
+		font-size:2rem;
+		margin-bottom: 0.75%;
+	}
+
+	p {
+		margin: 0.5% 0;
+	}
+}
+
+
+.about {
+	display:flex;
+	justify-content:center;
+	align-content:center;
+
+	.self-image, .self-bio {
+		width: 40%;
+		margin: 3% 5%;
+	}
+
+	p {
+		padding: 1%;
+	}
+}
+
+
+
+.skills {
+	h2 {
+		text-align:center;
+	}
+
+	ol {
+		margin-left:5%;
+
+		li {
+			padding: 1%;
+		}
+	}
+}
+
+
+
+
 
 
 
