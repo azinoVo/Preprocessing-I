@@ -88,7 +88,7 @@ html, body {
 	}
 }
 
-header {
+header, footer {
 	text-align:center;
 	background-color:@bg-color;
 
@@ -127,6 +127,7 @@ header {
 
 	ol {
 		margin-left:5%;
+		list-style-type: circle;
 
 		li {
 			padding: 1%;
@@ -134,7 +135,42 @@ header {
 	}
 }
 
+.work-exp {
+	h2 {
+		text-align:center;
+	}
 
+	ol {
+		margin-left:5%;
+		list-style-type: circle;
+
+		li {
+			padding:1%;
+		}
+
+	}
+
+	
+
+}
+
+
+.education {
+	display:flex;
+	justify-content:center;
+	align-content:center;
+
+	.edu-pic {
+		width: 40%;
+		margin: 3% 5%;
+		order:-1;
+	}
+
+	.edu-info {
+		width: 40%;
+		margin: 3% 5%;	
+	}
+}
 
 
 

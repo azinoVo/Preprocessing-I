@@ -145,15 +145,18 @@ body {
   font-size: 1.5rem;
   border-bottom: 1px solid black;
 }
-header {
+header,
+footer {
   text-align: center;
   background-color: #82b2f4;
 }
-header h1 {
+header h1,
+footer h1 {
   font-size: 2rem;
   margin-bottom: 0.75%;
 }
-header p {
+header p,
+footer p {
   margin: 0.5% 0;
 }
 .about {
@@ -174,7 +177,32 @@ header p {
 }
 .skills ol {
   margin-left: 5%;
+  list-style-type: circle;
 }
 .skills ol li {
   padding: 1%;
+}
+.work-exp h2 {
+  text-align: center;
+}
+.work-exp ol {
+  margin-left: 5%;
+  list-style-type: circle;
+}
+.work-exp ol li {
+  padding: 1%;
+}
+.education {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.education .edu-pic {
+  width: 40%;
+  margin: 3% 5%;
+  order: -1;
+}
+.education .edu-info {
+  width: 40%;
+  margin: 3% 5%;
 }
