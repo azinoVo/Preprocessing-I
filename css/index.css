@@ -130,13 +130,25 @@ table {
 * {
   box-sizing: border-box;
 }
+.flexin {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 html,
 body {
   height: 100%;
 }
 .container {
   max-width: 1100px;
+  height: auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    height: auto;
+  }
 }
 .container img {
   width: 25%;
@@ -168,6 +180,12 @@ footer p {
 .about .self-bio {
   width: 40%;
   margin: 3% 5%;
+}
+@media (max-width: 500) {
+  .about .self-image,
+  .about .self-bio {
+    width: 20%;
+  }
 }
 .about p {
   padding: 1%;
@@ -205,4 +223,30 @@ footer p {
 .education .edu-info {
   width: 40%;
   margin: 3% 5%;
+  order: 2;
+}
+.education .edu-info ul li {
+  padding: 1.25%;
+}
+.portfolio {
+  width: 40%;
+  margin-left: 2%;
+}
+.portfolio .port-info p {
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.portfolio .port-info button {
+  background-color: white;
+  font-size: 1.5rem;
+  border-radius: 0.75rem;
+  padding: 1%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.portfolio .port-info button a {
+  text-decoration: none;
+}
+.portfolio .port-info button:hover {
+  background-color: #ee96cb;
 }
