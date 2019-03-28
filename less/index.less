@@ -53,7 +53,180 @@ table {
     box-sizing: border-box;
 }
 
+//Beginning of my Code
+
+@bg-color: #82b2f4;
+@bg-check:#ee96cb;
+
+//background color for smooth layout, remove later
+
+// .about, .work-exp, .portfolio {
+// 	background-color:@bg-check;
+// }
+
+// .skills, .education, footer  {
+// 	background-color:@bg-color;
+// }
+
+//Mixins
+
+.flexin {
+	display:flex;
+	justify-content:center;
+	align-content:center;
+}
+
+
+
 html, body {
     height: 100%;
 }
+
+.container {
+	max-width:1100px;
+	height:auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+	@media (max-width:500px){
+			width:500px;
+			height:auto;
+		}
+
+	img {
+		width: 25%;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		border-bottom: 1px solid black;
+	}
+}
+
+header, footer {
+	text-align:center;
+	background-color:@bg-color;
+
+	h1 {
+		font-size:2rem;
+		margin-bottom: 0.75%;
+	}
+
+	p {
+		margin: 0.5% 0;
+	}
+}
+
+
+.about {
+	.flexin();
+	// display:flex;
+	// justify-content:center;
+	// align-content:center;
+
+	.self-image, .self-bio {
+		width: 40%;
+		margin: 3% 5%;
+
+		@media (max-width:500){
+		width: 20%;
+		}
+	}
+
+	p {
+		padding: 1%;
+	}
+}
+
+.skills {
+	h2 {
+		text-align:center;
+	}
+
+	ol {
+		margin-left:5%;
+		list-style-type: circle;
+
+		li {
+			padding: 1%;
+		}
+	}
+}
+
+.work-exp {
+	h2 {
+		text-align:center;
+	}
+
+	ol {
+		margin-left:5%;
+		list-style-type: circle;
+
+		li {
+			padding:1%;
+		}
+
+	}
+
+}
+
+.education {
+	.flexin();
+	// display:flex;
+	// justify-content:center;
+	// align-content:center;
+
+	.edu-pic {
+		width: 40%;
+		margin: 3% 5%;
+		order:-1;
+	}
+
+	.edu-info {
+		width: 40%;
+		margin: 3% 5%;
+		order:2;
+
+		ul {
+			li {
+				padding:1.25%;
+			}
+		}
+		
+	}
+}
+
+.portfolio {
+	width:40%;
+	margin-left: 2%;
+	.port-info {
+
+		h2 {
+		}
+
+		p {
+			padding: 1%;
+			margin-bottom:2%;
+		}
+
+		button {
+			background-color: white;
+			font-size: 1.5rem;
+			border-radius: 0.75rem;
+			padding:1%;
+			margin-left:2%;
+			margin-top: 2%;
+
+
+			a {
+				text-decoration:none;
+			}
+
+			&:hover {
+				background-color:@bg-check;
+			}
+
+		}
+	}
+}
+
 
